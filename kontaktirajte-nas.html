@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./slike/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <title>Kontaktirajte nas | Najbolja kafa u Zrenjaninu!</title>
+  </head>
+  <body>
+    <nav id="navigacija">
+      <div class="flex-kontejner">
+        <div class="logo">
+          <a href="#">
+            <img src="./slike/logok.png" alt="logo kafica Melange" />
+          </a>
+        </div>
+        <div class="hamb-meni">
+          <img
+            src="./slike/menu.png"
+            alt="ikonica za otvaranje hamburger menija"
+          />
+        </div>
+        <div class="navigacioni-meni">
+          <div class="navigacioni-link">
+            <a href="index.html">Početna</a>
+            <div class="linija"></div>
+          </div>
+          <div class="navigacioni-link">
+            <a href="o-nama.html">O nama</a>
+            <div class="linija"></div>
+          </div>
+          <div class="navigacioni-link">
+            <a href="meni.html">Meni</a>
+            <div class="linija"></div>
+          </div>
+          <div class="navigacioni-link">
+            <a href="kontaktirajte-nas.html">Rezervacija</a>
+            <div class="linija"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="forma-za-rezervaciju">
+      <div class="container mt-5">
+        <h2 class="mb-4">Forma za rezervaciju stola:</h2>
+        <form>
+          <div class="form-group">
+            <label for="ime">Ime</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ime"
+              placeholder="Unesite ime"
+              required
+              title="Ime može sadržati samo slova i maksimalno moze biti 30 karaktera dugacko"
+            />
+          </div>
+          <div class="form-group">
+            <label for="prezime">Prezime</label>
+            <input
+              type="text"
+              class="form-control"
+              id="prezime"
+              placeholder="Unesite prezime"
+              required
+              pattern="[A-Za-zČčĆćĐđŠšŽž\s]{1,30}"
+              title="Prezime može sadržati samo slova i maksimalno moze biti 30 karaktera dugacko"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefon">Broj telefona</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefon"
+              placeholder="Unesite broj telefona u formi: 60 5553335566"
+              required
+              pattern="[0-9]{8,13}"
+              title="Broj telefona mora imati između 8 i 13 karaktera"
+            />
+          </div>
+          <div class="form-group">
+            <label for="datum">Datum rezervacije</label>
+            <input type="date" class="form-control" id="datum" required />
+          </div>
+          <div class="form-group">
+            <label for="vreme">Vreme rezervacije</label>
+            <input type="time" class="form-control" id="vreme" required />
+          </div>
+          <div class="form-group">
+            <label>Mesto:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mesto"
+                id="napolje"
+                value="napolje"
+                title="Izaberite bar jednu od opcija"
+                required
+              />
+              <label class="form-check-label" for="napolje"> Napolje </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="mesto"
+                id="unutra"
+                title="Izaberite bar jednu od opcija"
+                value="unustra"
+              />
+              <label class="form-check-label" for="unutra"> Unutra </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="brojStolova">Broj stolova</label>
+            <input
+              type="number"
+              class="form-control"
+              id="brojStolova"
+              min="1"
+              max="10"
+              value="1"
+              required
+            />
+          </div>
+          <button type="submit" class="glavno-dugme">Rezerviši</button>
+        </form>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="kontejner">
+        <div class="footer-grid-omotac">
+          <div class="footer-meni">
+            <a href="index.html" class="footer-link">Početna</a>
+            <a href="o-nama.html" class="footer-link">O nama</a>
+            <a href="meni.html" class="footer-link">Meni</a>
+            <a href="kontaktirajte-nas.html" class="footer-link">Rezervacija</a>
+          </div>
+          <div class="kontakt-informacije">
+            <h4>Posetite nas na adresi</h4>
+            <p>Jug Bogdana 4, Zrenjanin</p>
+            <h4>Ili nas kontaktirajte na</h4>
+            <p>069/1310060</p>
+            <h4>Zapratite nas</h4>
+            <div class="socijalne-mreze">
+              <div class="social-ikonica">
+                <a
+                  href="https://www.instagram.com/melange.023/"
+                  target="_blank"
+                >
+                  <img
+                    src="./slike/insta.jpg"
+                    alt="ikonica instagrama koja vodi na instagram melange-a"
+                  />
+                </a>
+              </div>
+              <div class="social-ikonica">
+                <a
+                  href="https://www.facebook.com/cafemelange023"
+                  target="_blank"
+                >
+                  <img
+                    src="./slike/fb.png"
+                    alt="ikonica facebooka koja vodi na facebook profil melange-a"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mapa">
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Caf%C3%A9+Melange/@45.3734669,20.3994844,17z/data=!3m1!4b1!4m6!3m5!1s0x475adb4dfb0eb55d:0x5d04c1df58b2dfce!8m2!3d45.3734632!4d20.4020593!16s%2Fg%2F1q66nsslh?entry=ttu"
+            >
+              <img
+                src="./slike/mapa.png"
+                alt="lokacija Melange lokala u Zrenjaninu"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="pravna-izjava">
+          2024 &#169; Sva prava zadržava Alen Mesaroš
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>

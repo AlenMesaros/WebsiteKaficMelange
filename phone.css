@@ -1,0 +1,120 @@
+@media (max-width: 576px) {
+  .navigacioni-meni {
+    display: none;
+  }
+
+  .navigacioni-meni.otvoren {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color: #a45c40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamb-meni {
+    display: block;
+    box-sizing: content-box;
+    padding: 20px;
+    position: relative;
+    z-index: 101;
+  }
+
+  #hero-sekcija {
+    padding: 60px 0px;
+  }
+
+  .grid-omotac-hero {
+    grid-template-columns: auto;
+    height: auto;
+  }
+
+  .glavni-tekst-omotac {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glavni-naslov {
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .glavni-tekst {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .grid-desna-strana {
+    height: 50vh;
+    padding: 20px;
+  }
+
+  #eventovi {
+    padding: 60px 20px;
+  }
+
+  .naslov-sekcije {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .event-grid-omotac {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  #footer {
+    padding: 20px;
+  }
+  .footer-grid-omotac {
+    grid-template-columns: auto;
+  }
+
+  .kontakt-informacije {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: #f6eee031 1px solid;
+  }
+
+  .mapa {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: #f6eee031 1px solid;
+  }
+
+  /* O nama stranica */
+
+  .grid-kartica {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .strana-sa-tekstom {
+    padding: 30px;
+  }
+
+  .strana-sa-slikom {
+    height: 400px;
+  }
+
+  /* meni stranica */
+  .grid-meni {
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .kartica-meni {
+    width: 200px;
+  }
+}
